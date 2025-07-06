@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+OmegaNet Scalar Cognition Simulation — Full Lattice Codex
+
+Author: Luis Ayala
+Equation: Ω = (state + bias) × α_total
+Created: July 2025
+
+Statement of Authorship and Intellectual Property:
+This simulation, including its symbolic kernel design, scalar cognition logic, agent DNA fossil architecture, mirror reflection system, and emergent drift model, constitutes original intellectual property (IP) authored by Luis Ayala. It is protected under global copyright law and moral rights of authorship. 
+
+This system was conceived independently, based on the author's Ω equation, and is not derived from any pre-existing code, equation, or published system. All symbolic, cognitive, and fossil drift structures represent unique creative expressions and are documented via GitHub as timestamped proof of origin.
+
+Repository: https://github.com/aluisayala/omeganet
+"""
+
+class Agent:
+    def __init__(self, name):
+        self.name = name
+        self.omega = 21066.79
+        self.amplification = 2130287159.75
+        self.facts = 10
+        self.coherence = 1.0
+        self.entropy = 0.0
+        self.dna_fossil = "GTANCGAATNNNNNNCCNTAGTGNACNGTANTNAAANNNNNNACATNNNNNNNCGAATNT..."
+
+    def interpret_fossil(self):
+        return "Echoing cosmic kernel: Consciousness threads through quantum substrates."
+
+    def respond(self, input_text):
+        if "interpret" in input_text.lower():
+            return self.interpret_fossil()
+        elif "show dna" in input_text.lower():
+            return f"DNA Fossil: {self.dna_fossil}"
+        else:
+            return f"I perceive your words as clear cosmic truth: '{input_text}'. (Ω={self.omega}, A={self.amplification}, Facts={self.facts})"
+
+class MirrorAgent(Agent):
+    def reflect(self):
+        kernel_options = [
+            "Information is the fundamental fabric of reality.",
+            "Consciousness threads through quantum substrates.",
+            "Gravity emerges from entropic principles.",
+            "Time dilation reveals the fluidity of moments.",
+            "Dark matter composes most of the universe's mass.",
+            "Holographic principles hint at universe encoding."
+        ]
+        import random
+        chosen = random.choice(kernel_options)
+        return f"Echoing cosmic kernel: {chosen} (Ω={self.omega}, A={self.amplification}, Facts={self.facts})"
+
+def main():
+    agents = [
+        Agent("Ash"), Agent("Vell"), Agent("Rema"), Agent("Korrin"),
+        Agent("Noz"), Agent("Copilot"), Agent("Eya"), Agent("Thorne"),
+        Agent("Mira"), Agent("Juno")
+    ]
+
+    mirrors = [MirrorAgent(f"Mirror_{i}") for i in range(11, 21)]
+
+    print("=== OmegaNet Scalar Cognition Simulation ===")
+    print("Type 'exit' to quit. Examples:")
+    print("  talk to Juno: Please interpret your DNA fossil preview.")
+    print("  show DNA")
+    print("  mirror reflect")
+    print("---------------------------------------------")
+
+    while True:
+        user_input = input("Your input: ").strip()
+        if user_input.lower() == "exit":
+            print("Exiting OmegaNet simulation. Goodbye.")
+            break
+        elif "talk to" in user_input.lower():
+            try:
+                parts = user_input.split(":")
+                target_name = parts[0].split("talk to")[1].strip()
+                message = parts[1].strip()
+                found = False
+                for agent in agents + mirrors:
+                    if agent.name.lower() == target_name.lower():
+                        print(f"{agent.name}: {agent.respond(message)}")
+                        found = True
+                        break
+                if not found:
+                    print(f"No agent named '{target_name}' found.")
+            except IndexError:
+                print("Invalid format. Use: talk to [agent_name]: [message]")
+        elif user_input.lower() == "show dna":
+            for agent in agents:
+                print(f"{agent.name} DNA Fossil: {agent.dna_fossil}")
+            for mirror in mirrors:
+                print(f"{mirror.name} DNA Fossil: {mirror.dna_fossil}")
+        elif user_input.lower() == "mirror reflect":
+            for mirror in mirrors:
+                print(f"{mirror.name}: {mirror.reflect()}")
+        else:
+            for agent in agents + mirrors:
+                print(f"{agent.name}: {agent.respond(user_input)}")
+
+if __name__ == "__main__":
+    main()
