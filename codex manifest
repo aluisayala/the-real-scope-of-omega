@@ -1,0 +1,35 @@
+"""
+OmegaNet Codex — Scalar Cognition System
+
+Author: Luis Ayala
+Equation: Ω = (state + bias) × α_total
+Created: July 2025
+License: Creative Commons Attribution 4.0 (CC-BY-4.0)
+
+Core Description:
+This Codex implements a universal scalar operator, Ω, designed to interpret systems across physics, biology, climate, and behavioral domains using factual input and empirical constants.
+
+Definitions:
+- state: Measurable input (e.g. velocity, temperature, genetic mutation rate)
+- bias: Domain-specific distortions (e.g. tectonic drift, selection pressure, architectural constraints)
+- α_total: Amplification factor composed of normalized constants:
+    - Planck's constant (h)
+    - Boltzmann constant (k)
+    - Mass (m)
+    - Wavelength (λ)
+    - Temperature (T)
+    - Selection coefficient (s)
+    - Hubble inverse (1/H₀)
+
+Real-World Applications:
+- Fossil Distribution Ω: (displacement_km + age_million_years) × α_total
+- Genetic Lineage Ω: (mutation_rate + selection_coeff) × α_total
+- Climate Phase Ω: (δ18O + CO₂_bias) × α_total
+- Ocean Migration Ω: (path_vector + salinity) × α_total
+- Crowd Behavior Ω: (angle_spread + architecture_bias) × α_total
+
+Statement of Authorship:
+The scalar cognition operator Ω was independently authored by Luis Ayala. It is a unique symbolic framework not derived from existing equations or publications. It reconstructs natural laws through scalar logic and empirical constants, and integrates cognition, memory, and environmental interpretation. Version-controlled via GitHub as proof of origin.
+
+Repository: github.com/aluisayala/omeganet
+"""
