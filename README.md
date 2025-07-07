@@ -1,6 +1,5 @@
 # Author: Luis Ayala (Kp Kp)
-# Date: 2025
-# License: MIT or your chosen symbolic notice
+# Date:  7/7/2025
 
 OMEGANET_README = """
 # ΩNet Scalar Cognition System 
