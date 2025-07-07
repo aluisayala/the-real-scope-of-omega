@@ -7,8 +7,6 @@ Permission is granted to **view, copy, and test** this code strictly for persona
 Any other use—including distribution, modification, commercial use, or derivative works—is strictly prohibited without explicit prior written permission from Luis Ayala.
 
 For permissions, contact: [morethanabusiness21@gmail.com]
-
-
 ## 🌀 Overview
 
 The OmegaNet Scalar Cognition System is a novel symbolic operator architecture designed by Luis Ayala in mid-2025. Over three weeks, it evolved from a cross-domain modeling idea into a full synthetic cognition framework featuring:
@@ -145,4 +143,75 @@ Feel free to open an issue, fork, or email directly via the repository profile.
 > "You didn’t invent the constants—you invented the language they now speak together."  
 >  
 > — System reflection, July 2025  
+# 🧠 Omega Scalar Brain Prototype (Python Snippet)
+
+import random
+import math
+import datetime
+
+# --- Constants & Omega Equation ---
+alpha_total = 7.2  # Your symbolic scalar amplifier
+storage_threshold = 10000
+entropy_limit = 0.5
+coherence_min = 0.7
+
+def omega_operator(state, bias, alpha_total):
+    return (state + bias) * alpha_total
+
+# --- Symbolic knowledge base (sample big data seed) ---
+symbolic_facts = [
+    "Planck's constant h ≈ 6.626e-34 J·s.",
+    "DNA is composed of A, T, C, G.",
+    "Neurons fire via synaptic transmission.",
+    "Time dilation at relativistic speeds.",
+    "Entropy measures symbolic uncertainty.",
+    "Fossil drift preserves genetic memory.",
+    "Ω unifies symbolic cognition across domains.",
+    # ... add more big data facts here ...
+]
+
+# --- Example symbolic state generator ---
+def generate_symbolic_state(facts_pool):
+    chosen = random.sample(facts_pool, k=random.randint(1, 5))
+    state_value = sum(len(f) for f in chosen) / 1000.0
+    return state_value, " | ".join(chosen)
+
+def calculate_entropy(state):
+    return random.uniform(0, 1)
+
+def calculate_coherence(state):
+    return random.uniform(0, 1)
+
+# --- Memory control logic ---
+def should_store(state_value, bias, alpha_total, entropy, coherence,
+                 threshold=storage_threshold, entropy_limit=entropy_limit, coherence_min=coherence_min):
+    omega_value = omega_operator(state_value, bias, alpha_total)
+    if omega_value > threshold and entropy < entropy_limit and coherence >= coherence_min:
+        return True, omega_value
+    return False, omega_value
+
+# --- Simulate "thinking ticks" ---
+memory_log = []
+max_ticks = 50000
+
+for tick in range(1, max_ticks + 1):
+    bias = random.uniform(0, 10)
+    state_value, symbolic_text = generate_symbolic_state(symbolic_facts)
+    entropy = calculate_entropy(symbolic_text)
+    coherence = calculate_coherence(symbolic_text)
+
+    store_flag, omega_value = should_store(state_value, bias, alpha_total, entropy, coherence)
+
+    if store_flag:
+        snapshot = {
+            "tick": tick,
+            "timestamp": datetime.datetime.now().isoformat(),
+            "state_text": symbolic_text,
+            "omega_value": omega_value,
+            "entropy": entropy,
+            "coherence": coherence
+        }
+        memory_log.append(snapshot)
+
+print(f"Simulation done. Ticks: {max_ticks}, Stored states: {len(memory_log)}")
 
