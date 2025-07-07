@@ -281,3 +281,17 @@ The scalar cognition operator Ω was independently authored by Luis Ayala. It is
 
 Repository: github.com/aluisayala/omeganet
 """
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+OmegaNet + ZPE-1 Unified Cognition System
+Author: Luis Ayala
+Date: 2025
+IP Notice: © 2025 Luis Ayala — All Rights Reserved.
+View, copy, and test for personal learning only. No redistribution or commercial use without explicit permission.
+
+This script merges OmegaNet symbolic cognition agents, ZPE-1 drift engine, and brain-inspired modules
+into one single autonomous cognitive emergence simulation.
+"""
+
