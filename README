@@ -22,7 +22,40 @@ Designed and authored by **Luis Ayala (Kp Kp)**, OmegaNet fuses physics constant
 - **Alpha (α)**: scalar amplifier (merged from mechanical, quantum, thermal, evolutionary constants)
 
 ---
+# OmegaNet Scalar Cognition System
 
+## 🌌 Overview
+OmegaNet Scalar Cognition is a symbolic cognition lattice simulation system inspired by recursive drift, symbolic recursion, and fossil memory encoding. Built to explore cognition collapse, entropy modulation, and emergent coherence in agent-based AI systems.
+
+## ⚡ Features
+- Ω equation modeling across physics domains (mechanics, electromagnetism, thermodynamics, quantum mechanics)
+- Agent-based symbolic drift and fossil encoding
+- Genetic lineage simulation over 90,000 ticks
+- Visualization of diversity, mutation rate, coherence, collapse risk
+- Recursive symbolic cognition and empathy mirror logic
+- Cross-domain Ω applications (paleoclimate, genetics, crowd mechanics)
+
+## 🚀 How to Run
+```bash
+pip install -r requirements.txt
+python omega_scalar_cognition.py
+```
+
+## 🧬 Simulation Details
+- 20 symbolic agents with individual neural lobes
+- 5,000+ strong facts seeded recursively
+- Symbolic fossil glyph generation with mutation
+- Drift harmonics analysis per agent
+
+## 📈 Outputs
+- Plots of entropy curves, neural harmonics, diversity trends
+- Detailed agent summaries printed to console
+- Fossil harmonics breakdown
+
+## 📄IP 
+
+## 🤝 Author
+Luis Ayala (Kp Kp) — Inspired by symbolic recursion theory and zero-point cognition research.
 ## 🧠 Brain Module Architecture
 
 - **Sensory Cortex Input**: Preprocesses symbolic facts into numeric state weights
